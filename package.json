@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "Proyecto BienesRaices NodeJS",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "node app.js",
-    "server": "nodemon app.js"
+    "server": "nodemon app.js",
+    "css": "postcss public/css/tailwind.css -o public/css/app.css"
   },
   "repository": {
     "type": "git",
@@ -21,9 +23,14 @@
   "author": "Rosales Jhon",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "pug": "^3.0.2"
   },
   "devDependencies": {
-    "nodemon": "^3.0.1"
+    "autoprefixer": "^10.4.16",
+    "nodemon": "^3.0.1",
+    "postcss": "^8.4.31",
+    "postcss-cli": "^10.1.0",
+    "tailwindcss": "^3.3.3"
   }
 }
